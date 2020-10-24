@@ -1,4 +1,133 @@
 html {
+    font-family: Roboto Mono;
     background-color: black;
     color: white;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar .logo {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar .links a {
+    float: right;
+    display: block;
+}
+
+.navbar .links a:hover {
+    color: white;
+    background-color: #333;
+}
+
+.main {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin: auto;
+}
+
+.main .title {
+    font-size: 4em;
+    text-align: center;
+}
+
+.main .interest_box {
+    font-family: Unica One;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main .interest_box .interest a {
+    font-size: 2em;
+    transition: font-size 100ms;
+}
+
+.main .interest_box .interest a:hover {
+    font-size: 3em;
+}
+
+.main .interest_box .divider {
+    font-size: 4em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.main .resume {
+    height: 3em;
+}
+
+.main .resume .dl-button {
+    border-style: solid;
+    border-radius: 8px;
+    border-color: white;
+    border-width: 1px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    transition: font-size 100ms, color 100ms, background-color 100ms;
+}
+
+.main .resume .dl-button:hover {
+    font-size: 1.1em;
+    background-color: white;
+    color: black;
+}
+
+.main .resume .dl-button .icon {
+    padding: 8px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 0px 0px;
+}
+
+.main .resume .dl-button .text {
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+
+.footer .contact {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+.footer .links {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
 }
