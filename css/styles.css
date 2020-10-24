@@ -1,7 +1,7 @@
 :root {
     --white: #ffffff;
     --black: #000000;
-    --accent: #6a8eae;
+    --accent: #9270ff;
 }
 
 html {
@@ -177,9 +177,17 @@ body {
     bottom: 0;
 }
 
+.bottom .contact .phone, .bottom .contact .email {
+    justify-content: left;
+}
+
 .bottom .links {
     right: 0;
     bottom: 0;
+}
+
+.hspace {
+    width: 8px;
 }
 
 a {
@@ -188,6 +196,10 @@ a {
     padding: 8px;
     text-decoration: none;
     transition: color 100ms;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a:hover {
@@ -207,6 +219,10 @@ a:hover {
     }
 
     .scroll {
+        display: none;
+    }
+
+    .hide-mobile {
         display: none;
     }
 }
