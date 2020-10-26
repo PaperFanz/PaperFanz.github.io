@@ -25,6 +25,7 @@ body {
     overflow: hidden;
     padding: 16px;
     box-sizing: border-box;
+    background-color: var(--black);
 }
 
 .navbar .logo {
@@ -232,5 +233,9 @@ a:hover {
 
     .hide-mobile {
         display: none;
+    }
+
+    .content .row {
+        width: 80%;
     }
 }
