@@ -33,19 +33,19 @@
       <div class="vdiv"></div>
       <div class="interest_box">
         <div class="interest">
-          <a href="cv.html">ROBOTICS</a>
+          <a onclick="scrollToElement(robotics)">ROBOTICS</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a href="cv.html">IOT</a>
+          <a onclick="scrollToElement(iot)">IOT</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a href="cv.html">COMPUTING</a>
+          <a onclick="scrollToElement(computing)">COMPUTING</a>
         </div>
       </div>
       <div class="vdiv"></div>
@@ -63,13 +63,13 @@
   </div>
 
   <div class="scroll">
-    <div class="icon" onclick="scrollToContent()">
+    <div class="icon" onclick="scrollToElement(content)">
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
 
   <div class="content" id="content">
-    <div class="row">
+    <div class="row" id="overview">
       <h1>Overview</h1>
       <p class="justify">
         Hello! My name is Pete Fan. I am currently studying Electrical and
@@ -80,7 +80,7 @@
         what I'm doing.
       </p>
     </div>
-    <div class="row">
+    <div class="row" id="robotics">
       <h2>Robotics</h2>
       <p class="justify">
         I am currently working as an undergraduate research assistant at the 
@@ -92,7 +92,7 @@
         VR motion controllers.
       </p>
     </div>
-    <div class="row">
+    <div class="row" id="iot">
       <h2>IoT and Embedded Systems</h2>
       <p class="justify">
         Embedded systems is a close second to robotics on my list of interests.
@@ -103,7 +103,7 @@
         Espressif and running FreeRTOS. Check back soon for updates!
       </p>
     </div>
-    <div class="row">
+    <div class="row" id="computing">
       <h2>Computing</h2>
       <p class="justify">
         Computing and its relatively short bu storied history is another one of 
