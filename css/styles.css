@@ -236,6 +236,10 @@ a:hover {
     }
 
     .content .row {
-        width: 80%;
+        width: 75%;
+    }
+
+    .justify {
+        text-align: start;
     }
 }
