@@ -2,5 +2,8 @@
 var content = document.getElementById("content");
 
 function scrollToContent() {
-    content.scrollIntoView(true);
+    content.scrollIntoView({
+        block: 'center',
+        behavior: 'smooth'
+      });
 }

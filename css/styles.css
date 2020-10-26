@@ -190,6 +190,10 @@ body {
     width: 8px;
 }
 
+.justify {
+    text-align: justify;
+}
+
 a {
     color: var(--white);
     text-align: center;
