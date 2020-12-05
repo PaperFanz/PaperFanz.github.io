@@ -162,14 +162,62 @@ body {
     width: 50%;
 }
 
+.content .row .brief {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gdrive-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.gdrive-vid {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
     height: 50%;
+}
+
+.fixed {
+    position: fixed;
+    padding: 16px;
+}
+
+.highlight {
+    color: var(--accent);
 }
 
 .vflex {
     display: flex;
     flex-direction: column;
-    position: fixed;
+}
+
+.hflex {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.hflex-flow {
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.pad16 {
     padding: 16px;
 }
 
@@ -193,6 +241,12 @@ body {
 
 .justify {
     text-align: justify;
+}
+
+.portrait {
+    height: 256px;
+    vertical-align: middle;
+    border-radius: 50%;
 }
 
 a {
@@ -241,5 +295,11 @@ a:hover {
 
     .justify {
         text-align: start;
+    }
+
+    .hflex-flow {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
     }
 }
