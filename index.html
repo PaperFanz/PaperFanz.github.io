@@ -8,7 +8,6 @@
   <meta name="description" content="Pete Fan's personal website">
   <meta name="author" content="paperfanz">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono|Unica+One">
   <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -27,7 +26,7 @@
 
   <div class="main" id="main">
     <div class="greeting">
-      <div class="title">
+      <div class="title animate__animated animate__bounce">
         Hi, I'm <span>Pete</span>
       </div>
       <div class="vdiv"></div>
@@ -72,55 +71,42 @@
     <div class="row" id="overview">
       <h1>OVERVIEW</h1>
     </div>
+
     <div class="row" id="about">
       <h2>About</h2>
       <p class="justify">
         <img src="res/portrait.jpg" alt="portrait" class="portrait" align="left">
-        Hello! My name is Pete Fan. I am currently studying Electrical and
-        Computer Engineering at the University of Texas at Austin, with a keen 
-        interest in robotics and embedded systems. I have extensive experience 
-        in ROS, C/C++, Python, and Linux. When I'm not working on robots or 
-        embedded devices, I like to collect and tinker with antique electronics. 
-        I'm currently working on converting an original 1994 AppleDesign 
-        Keyboard to a wireless keyboard. When my eyes need a break from staring 
-        at my computer display, I like to sketch or read. Feel free to check out 
-        my work using the links in the bottom right and reach out if you're 
-        interested.
+        Hello! My name is Pete Fan. I an undergraduate studying Electrical and Computer Engineering at the University of Texas at Austin. I am working on situational awareness and IoRT in the Nuclear and Applied Robotics Group, advised by Dr. Mitch Pryor.
+        <br><br>
+
+        I am interested in leveraging AI/ML and IoT to improve decisional autonomy and robustness in robotics.
+        <br><br>
+        
+        When I'm not working on robots or embedded devices, I like to collect and tinker with antique electronics. I'm currently working on converting an original 1994 AppleDesign Keyboard to a wireless keyboard.
+        <br><br>
+        
+        When my eyes need a break from staring at my computer display, I like to sketch or read. Feel free to check out my work using the links in the bottom right and reach out if you're interested.
       </p>
     </div>
+
     <div class="row" id="robotics">
       <h2>Robotics</h2>
       <p class="justify">
-        I am currently working as an undergraduate research assistant at the 
-        Nuclear and Applied Robotics Group, under the supervision of Dr. Mitch 
-        Pryor. My current projects are InSitu, a situational awareness package 
-        aiming to generalize sensor overlays for video feeds, and ThirdEye, a 
-        package intended to bridge IoT endpoints to ROS using FreeRTOS and AWS.
-        My previous work has primarily dealt with intuitive teleoperation using 
-        VR motion controllers.
+        I believe robotics has massive potential as a tool to aid humanity across a huge number of fields, especially as we adjust to life in a post-COVID world. However, many robotic systems are unable to operate in the complex, ever-changing world that humans are so used to. I am interested in how to best improve the usability of robotic systems by leveraging technologies such as AI and IoT. My current projects are InSitu, a situational awareness package aiming to generalize sensor overlays for video feeds, and ThirdEye, a package intended to bridge IoT endpoints to ROS using FreeRTOS and AWS. My previous work has primarily dealt with intuitive teleoperation using VR motion controllers.
       </p>
     </div>
+
     <div class="row" id="iot">
       <h2>IoT and Embedded Systems</h2>
       <p class="justify">
-        Embedded systems is a close second to robotics on my list of interests.
-        Specifically, I am interested in the developmental challenges of 
-        large-scale IoT deployments. I'm working on an open-source IoT 
-        endpoint for my senior design project, under the mentorship of 
-        Professor Mark McDermott. The system is based around the ESP32 SoC by 
-        Espressif and running FreeRTOS. Check back soon for updates!
+        Embedded systems is a close second to robotics on my list of interests. Specifically, I am interested in the developmental challenges of large-scale IoT deployments. I'm working on an open-source IoT endpoint for my senior design project, under the mentorship of Professor Mark McDermott. The system is based around the ESP32 SoC by Espressif and running FreeRTOS. Check back soon for updates!
       </p>
     </div>
+
     <div class="row" id="computing">
       <h2>Computing</h2>
       <p class="justify">
-        Computing and its relatively short but storied history is another one 
-        of my key interests. Inspired (rather, infuriated) by the tools used in 
-        my introductory computing course, I developed a Visual Studio Code 
-        extension and an accompanying assembler for the LC3 assembly language, 
-        which you can find on my Github. More recently, I've been working on 
-        my own Linux customizations, including a shellscript-based status bar 
-        and window manager extensions.
+        Computing and its relatively short but storied history is another one of my key interests. Inspired (rather, infuriated) by the tools used in my introductory computing course, I developed a Visual Studio Code extension and an accompanying assembler for the LC3 assembly language, which you can find on my Github. More recently, I've been working on my own Linux customizations, including a shellscript-based status bar and window manager extensions.
       </p>
     </div>
   </div>
@@ -130,17 +116,35 @@
       <h1>PROJECTS</h1>
     </div>
     <div class="row">
+      <h2>e-Ink Graphing Calculator</h2>
+      <h3 class="highlight">
+        Fall 2020 Embedded Systems Competition Runner Up
+      </h3>
+      <p class="justify">
+        The handheld calculator market was once saturated with competitors, much like the current smartphone market, but has since become dominated by just a few companies; Texas Instruments, Hewlett Packard, and Casio. So for our Embedded Systems Lab final project, my teammates and I decided to light a fire under their asses by building our own graphing calculator. We wrote a custom driver for a 4.2" high definition e-Ink display that absolutely dwarfed the competition, and created the Embedded Arithmetic Shell Interface (EASI) to compete with the big boys' software offerings. Check out our presentation below:
+      </p>
+      
+      <div class="gdrive-container">
+        <iframe class="gdrive-vid" src="https://www.youtube.com/embed/qJLHiARLvFs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row">
       <h2>AirTouch</h2>
       <h3 class="highlight">
         Fall 2020 Ram's Horn Award Overall Winner
       </h3>
-      This was a small project that I worked on with two friends for our Digital
-      Image Processing course. We used a Intel Realsense D455 depth camera to 
-      create a virtual drawing tablet. Here's our presentation video:
+      <p class="justify">
+        Digital Image Processing was a hidden gem in an otherwise unremarkable slugfest of a semester. I learned a lot about how AI is applied in computer vision and where it is most effective. This was a small project that I worked on with two friends for our semester project. We used a Intel Realsense D455 depth camera to create a virtual drawing tablet. Here's our presentation video:
+      </p>
 
       <div class="gdrive-container">
         <iframe class="gdrive-vid" src="https://drive.google.com/file/d/1TtqI-gtcIjuQ9ZZYHtuZB0QEacjTfo9q/preview"></iframe>
       </div>
+
+      <p class="justify">
+        To my chagrin, my teammates shot down my idea of calling hand candidates "handidates," but I'd like to share it for anyone doing similar work.
+      </p>
     </div>
   </div>
 
