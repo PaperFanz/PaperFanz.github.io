@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Unica+One");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 
 :root {
     --white: #ffffff;
@@ -235,6 +234,7 @@ body {
 }
 
 .bottom .links {
+    z-index: 4;
     right: 0;
     bottom: 0;
 }
@@ -252,6 +252,15 @@ body {
     padding-top: 4px;
     padding-right: 12px;
     vertical-align: middle;
+}
+
+.bottom-fade {
+    z-index: 3;
+    background-color: var(--black);
+    bottom: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
 }
 
 a {

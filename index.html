@@ -18,33 +18,34 @@
       Pete Fan
     </div>
     <div class="links">
-      <a onclick="scrollToElement('projects')">Projects</a>
-      <a onclick="scrollToElement('about')">About</a>
-      <a onclick="scrollToElement('main')">Home</a>
+      <a onclick="scrollToElement('papers', 'center')">Publications</a>
+      <a onclick="scrollToElement('projects', 'center')">Projects</a>
+      <a onclick="scrollToElement('about', 'center')">About</a>
+      <a onclick="scrollToElement('main', 'center')">Home</a>
     </div>
   </div>
 
   <div class="main" id="main">
     <div class="greeting">
-      <div class="title animate__animated animate__bounce">
+      <div class="title">
         Hi, I'm <span>Pete</span>
       </div>
       <div class="vdiv"></div>
       <div class="interest_box">
         <div class="interest">
-          <a onclick="scrollToElement('robotics')">ROBOTICS</a>
+          <a onclick="scrollToElement('robotics', 'center')">ROBOTICS</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a onclick="scrollToElement('iot')">IOT</a>
+          <a onclick="scrollToElement('iot', 'center')">IOT</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a onclick="scrollToElement('computing')">COMPUTING</a>
+          <a onclick="scrollToElement('computing', 'center')">COMPUTING</a>
         </div>
       </div>
       <div class="vdiv"></div>
@@ -62,7 +63,7 @@
   </div>
 
   <div class="scroll">
-    <div class="icon" onclick="scrollToElement('content')">
+    <div class="icon" onclick="scrollToElement('content', 'center')">
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
@@ -72,8 +73,8 @@
       <h1>OVERVIEW</h1>
     </div>
 
-    <div class="row" id="about">
-      <h2>About</h2>
+    <div class="row">
+      <h2 id="about">About</h2>
       <p class="justify">
         <img src="res/portrait.jpg" alt="portrait" class="portrait" align="left">
         Hello! My name is Pete Fan. I an undergraduate studying Electrical and Computer Engineering at the University of Texas at Austin. I am working on situational awareness and IoRT in the Nuclear and Applied Robotics Group, advised by Dr. Mitch Pryor.
@@ -89,30 +90,30 @@
       </p>
     </div>
 
-    <div class="row" id="robotics">
-      <h2>Robotics</h2>
+    <div class="row">
+      <h2 id="robotics">Robotics</h2>
       <p class="justify">
         I believe robotics has massive potential as a tool to aid humanity across a huge number of fields, especially as we adjust to life in a post-COVID world. However, many robotic systems are unable to operate in the complex, ever-changing world that humans are so used to. I am interested in how to best improve the usability of robotic systems by leveraging technologies such as AI and IoT. My current projects are InSitu, a situational awareness package aiming to generalize sensor overlays for video feeds, and ThirdEye, a package intended to bridge IoT endpoints to ROS using FreeRTOS and AWS. My previous work has primarily dealt with intuitive teleoperation using VR motion controllers.
       </p>
     </div>
 
-    <div class="row" id="iot">
-      <h2>IoT and Embedded Systems</h2>
+    <div class="row">
+      <h2 id="iot">IoT and Embedded Systems</h2>
       <p class="justify">
         Embedded systems is a close second to robotics on my list of interests. Specifically, I am interested in the developmental challenges of large-scale IoT deployments. I'm working on an open-source IoT endpoint for my senior design project, under the mentorship of Professor Mark McDermott. The system is based around the ESP32 SoC by Espressif and running FreeRTOS. Check back soon for updates!
       </p>
     </div>
 
-    <div class="row" id="computing">
-      <h2>Computing</h2>
+    <div class="row">
+      <h2 id="computing">Computing</h2>
       <p class="justify">
         Computing and its relatively short but storied history is another one of my key interests. Inspired (rather, infuriated) by the tools used in my introductory computing course, I developed a Visual Studio Code extension and an accompanying assembler for the LC3 assembly language, which you can find on my Github. More recently, I've been working on my own Linux customizations, including a shellscript-based status bar and window manager extensions.
       </p>
     </div>
   </div>
 
-  <div class="content" id="projects">
-    <div class="row">
+  <div class="content">
+    <div class="row" id="projects">
       <h1>PROJECTS</h1>
     </div>
     <div class="row">
@@ -143,12 +144,24 @@
       </div>
 
       <p class="justify">
-        To my chagrin, my teammates shot down my idea of calling hand candidates "handidates," but I'd like to share it for anyone doing similar work.
+        My teammates shot down my idea of calling hand candidates "handidates," but I'd like to share it for anyone doing similar work.
       </p>
     </div>
   </div>
 
+  <div class="content">
+    <div class="row" id="papers">
+      <h1>Publications</h1>
+    </div>
+
+    <div class="row">
+      Adam Pettinger, Cassidy Elliot, Pete Fan, and Mitch Pryor (2020).“Reducing the Teleoperator’s Cognitive Burden for Complex Contact Tasks Using Affordance Primitives”. In: Proceedings of IROS 2020. Las Vegas, USA.
+    </div>
+  </div>
+
   <div class="footer"></div>
+
+  <div class="bottom-fade"></div>
 
   <script src="src/script.js"></script>
 </body>

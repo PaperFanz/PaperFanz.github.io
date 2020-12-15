@@ -1,8 +1,8 @@
 // script file for paperfanz.github.io
 
-function scrollToElement(eid) {
+function scrollToElement(eid, blk) {
   document.getElementById(eid).scrollIntoView({
-    block: 'center',
+    block: blk,
     behavior: 'smooth'
   });
 }
