@@ -19,33 +19,33 @@
       Pete Fan
     </div>
     <div class="links">
-      <a href="projects.html">Projects</a>
-      <a href="cv.html">CV</a>
-      <a href="index.html">Home</a>
+      <a onclick="scrollToElement('projects')">Projects</a>
+      <a onclick="scrollToElement('about')">About</a>
+      <a onclick="scrollToElement('main')">Home</a>
     </div>
   </div>
 
-  <div class="main">
+  <div class="main" id="main">
     <div class="greeting">
       <div class="title">
-        Hi, I'm Pete
+        Hi, I'm <span>Pete</span>
       </div>
       <div class="vdiv"></div>
       <div class="interest_box">
         <div class="interest">
-          <a onclick="scrollToElement(robotics)">ROBOTICS</a>
+          <a onclick="scrollToElement('robotics')">ROBOTICS</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a onclick="scrollToElement(iot)">IOT</a>
+          <a onclick="scrollToElement('iot')">IOT</a>
         </div>
         <div class="divider">
           //
         </div>
         <div class="interest">
-          <a onclick="scrollToElement(computing)">COMPUTING</a>
+          <a onclick="scrollToElement('computing')">COMPUTING</a>
         </div>
       </div>
       <div class="vdiv"></div>
@@ -63,21 +63,29 @@
   </div>
 
   <div class="scroll">
-    <div class="icon" onclick="scrollToElement(content)">
+    <div class="icon" onclick="scrollToElement('content')">
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
 
   <div class="content" id="content">
     <div class="row" id="overview">
-      <h1>Overview</h1>
+      <h1>OVERVIEW</h1>
+    </div>
+    <div class="row" id="about">
+      <h2>About</h2>
       <p class="justify">
+        <img src="res/portrait.jpg" alt="portrait" class="portrait" align="left">
         Hello! My name is Pete Fan. I am currently studying Electrical and
         Computer Engineering at the University of Texas at Austin, with a keen 
         interest in robotics and embedded systems. I have extensive experience 
-        in ROS, C/C++, Python, and Linux. Feel free to check out my work using 
-        the links in the bottom right and reach out if you're interested in 
-        what I'm doing.
+        in ROS, C/C++, Python, and Linux. When I'm not working on robots or 
+        embedded devices, I like to collect and tinker with antique electronics. 
+        I'm currently working on converting an original 1994 AppleDesign 
+        Keyboard to a wireless keyboard. When my eyes need a break from staring 
+        at my computer display, I like to sketch or read. Feel free to check out 
+        my work using the links in the bottom right and reach out if you're 
+        interested.
       </p>
     </div>
     <div class="row" id="robotics">
@@ -117,32 +125,33 @@
     </div>
   </div>
 
-  <div class="footer">
+  <div class="content" id="projects">
+    <div class="row">
+      <h1>PROJECTS</h1>
+    </div>
+    <div class="row">
+      <h2>AirTouch</h2>
+      <h3 class="highlight">
+        Fall 2020 Ram's Horn Award Overall Winner
+      </h3>
+      This was a small project that I worked on with two friends for our Digital
+      Image Processing course. We used a Intel Realsense D455 depth camera to 
+      create a virtual drawing tablet. Here's our presentation video:
 
+      <div class="gdrive-container">
+        <iframe class="gdrive-vid" src="https://drive.google.com/file/d/1TtqI-gtcIjuQ9ZZYHtuZB0QEacjTfo9q/preview"></iframe>
+      </div>
+    </div>
   </div>
+
+  <div class="footer"></div>
 
   <script src="src/script.js"></script>
 </body>
 
 <div class="bottom">
-  <address class="vflex fixed contact">
-    <a class="phone">
-      <i class="fas fa-mobile-alt"></i> 
-      <div class="hspace hide-mobile"></div>
-      <div class="hide-mobile">
-        +1 (469) 434 - 5308
-      </div>
-    </a>
-    <a class="email" href="mailto:petefan.7@utexas.edu">
-      <i class="far fa-envelope"></i>
-      <div class="hspace hide-mobile"></div>
-      <div class="hide-mobile">
-        petefan.7@utexas.edu
-      </div>
-    </a>
-  </address>
-
   <div class="vflex fixed links">
+    <a href="mailto:petefan.7@utexas.edu"><i class="far fa-envelope"></i></a>
     <a href="https://github.com/PaperFanz"><i class="fab fa-github"></i></a>
     <a href="https://gitlab.com/PaperFanz"><i class="fab fa-gitlab"></i></a>
     <a href="https://www.linkedin.com/in/zhiyuan-fan-896317193/"><i class="fab fa-linkedin"></i></a>
