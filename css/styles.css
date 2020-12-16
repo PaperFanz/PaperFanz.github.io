@@ -254,6 +254,12 @@ body {
     vertical-align: middle;
 }
 
+.pub-img {
+    padding-top: 4px;
+    padding-right: 12px;
+    height: 128px;
+}
+
 .top-fade {
     z-index: 3;
     background: linear-gradient(var(--black), transparent);
@@ -270,6 +276,10 @@ body {
     position: fixed;
     height: 75px;
     width: 100%;
+}
+
+.paper-dl {
+    display: inline;
 }
 
 a {
