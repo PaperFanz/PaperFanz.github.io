@@ -298,6 +298,11 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+
+    .navbar .logo {
+        display: none;
+    }
+
     .main .greeting .vdiv {
         height: 8px;
     }
