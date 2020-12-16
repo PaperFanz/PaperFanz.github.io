@@ -254,12 +254,21 @@ body {
     vertical-align: middle;
 }
 
+.top-fade {
+    z-index: 3;
+    background: linear-gradient(var(--black), transparent);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 74px;
+}
+
 .bottom-fade {
     z-index: 3;
-    background-color: var(--black);
+    background: linear-gradient(transparent, var(--black));
     bottom: 0;
     position: fixed;
-    height: 50px;
+    height: 75px;
     width: 100%;
 }
 
