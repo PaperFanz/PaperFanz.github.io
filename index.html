@@ -13,18 +13,20 @@
 </head>
 
 <body class="body">
-  <div class="navbar">
-    <div class="logo">
-      Pete Fan
+  <div class="navcontainer">
+    <div class="navbar">
+      <div class="logo">
+        Pete Fan
+      </div>
+      <div class="links">
+        <a onclick="scrollToElement('papers', 'center')">Publications</a>
+        <a onclick="scrollToElement('projects', 'center')">Projects</a>
+        <a onclick="scrollToElement('about', 'center')">About</a>
+        <a onclick="scrollToElement('main', 'center')">Home</a>
+      </div>
     </div>
-    <div class="links">
-      <a onclick="scrollToElement('papers', 'center')">Publications</a>
-      <a onclick="scrollToElement('projects', 'center')">Projects</a>
-      <a onclick="scrollToElement('about', 'center')">About</a>
-      <a onclick="scrollToElement('main', 'center')">Home</a>
-    </div>
+    <div class="top-fade"></div>
   </div>
-  <div class="top-fade"></div>
 
   <div class="main" id="main">
     <div class="greeting">

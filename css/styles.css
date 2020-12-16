@@ -18,12 +18,14 @@ body {
     height: 100%;
 }
 
-.navbar {
+.navcontainer {
     position: fixed;
-    left: 0;
-    top: 0;
+    top: 0px;
     width: 100%;
     z-index: 3;
+}
+
+.navbar {
     overflow: hidden;
     padding: 16px;
     box-sizing: border-box;
@@ -40,6 +42,12 @@ body {
 .navbar .links a {
     float: right;
     display: block;
+}
+
+.top-fade {
+    background: linear-gradient(var(--black), transparent);
+    height: 50px;
+    width: 100%;
 }
 
 .main {
@@ -258,15 +266,6 @@ body {
     padding-top: 4px;
     padding-right: 12px;
     height: 128px;
-}
-
-.top-fade {
-    z-index: 3;
-    background: linear-gradient(var(--black), transparent);
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 74px;
 }
 
 .bottom-fade {
