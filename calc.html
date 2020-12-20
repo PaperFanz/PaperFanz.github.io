@@ -1,0 +1,164 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>EASI PEASI</title>
+  <meta name="description" content="Pete Fan's personal website">
+  <meta name="author" content="paperfanz">
+  <link rel="stylesheet" href="css/styles.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/f569ccc368.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="body">
+  <div class="navcontainer">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <i class="fas fa-arrow-left"></i>
+          <div class="hspace"></div>
+          Return to Homepage
+        </a>
+      </div>
+      <div class="links">
+        <a onclick="scrollToElement('log', 'center')">Log</a>
+        <a onclick="scrollToElement('team', 'center')">Team</a>
+        <a onclick="scrollToElement('overview', 'center')">Overview</a>
+        <a onclick="scrollToElement('main', 'center')">Home</a>
+      </div>
+    </div>
+    <div class="top-fade"></div>
+  </div>
+
+  <div class="main titlecard" id="main">
+    <div class="greeting">
+      <div class="title shadow bold">
+        PEASI
+      </div>
+      <p class="shadow bold">Programmable E-Ink Abacus-Succeeding Instrument</p>
+      <div class="vdiv"></div>
+      <div class="resume">
+        <a class="dl-button" href="index.html">
+          <div class="icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="text">
+            Contribute
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bottom-fade"></div>
+  </div>
+
+  <div class="scroll">
+    <div class="icon" onclick="scrollToElement('overview', 'center')">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="row" id="overview">
+      <h1>OVERVIEW</h1>
+    </div>
+    <div class="row">
+      <p>
+        The PEASI is a graphing calculator based around a large, high resolution e-Paper display and a low power ARM microcontroller running an interactive mathematics engine called EASI. The goal of this project is to create an open-source competitor to current market leaders, namely the TI-84/Nspire series and the HP Prime series. Easy peasy :)
+      </p>
+    </div>
+    <div class="row">
+      <h2>Background</h2>
+      <p>
+        Graphing calculators are an essential educational tool but have seen little change in the last few decades. Despite rapid development of the rest of the technology world, the graphing calculator has maintained a $100+ price tag with little innovation since its introduction in the late 1980s. This is thanks to the <a class="inline-link" href="https://www.opensecrets.org/federal-lobbying/clients/agencies?cycle=2005&id=D000000722">lobbying efforts of Texas Instruments</a> and its effective monopoly over the global graphing calculator business. Even Hewlett Packard, once the darling of the scientific calculator world, is reduced to offering its newest HP Prime G2 for the same price as a <a class="inline-link" href="https://en.wikipedia.org/wiki/Zilog_eZ80">TI-84 based on a microcontroller first introduced in 1976</a>. 
+      </p>
+      <p>
+        Others have already taken matters into their own hands, introducing <a class="inline-link" href="https://www.desmos.com/">online graphing calculators</a> and <a class="inline-link" href="https://thebestcalculator.com/best-graphing-calculator-app/">apps for smartphones</a>. However, this approach has a fatal flaw; students will still have to buy and learn to use a TI (or HP or Casio) because they cannot use internet-enabled devices during exams. While these efforts are certainly laudable and providing crucial functionality to students who cannot afford a $100+ calculator at home, it does little to supplant TI's offerings in schools.
+      </p>
+      <p>
+        The EASI PEASI project aims to provide an affordable, open-source programmable graphing calculator for educators and professionals alike. By providing the schematics, bill of materials, 3d models for the housing, and software sources for free to all users, anyone could manufacture their own calculator. Anyone would be free to modify any part of the calculator and share these changes with others, thereby contributing to the development of the project.
+      </p>
+    </div>
+    <div class="row">
+      <h2>Goals</h2>
+      <p>
+        These are the goals that we have set for ourselves, listed in order from most to least important:
+        <ol>
+          <li>Functional parity with current flagship graphing calculators</li>
+          <li>Easy to use for students, easy to hack for engineers</li>
+          <li>Long battery life and fast charging</li>
+          <li>Financial accessibility (~50$ BOM)</li>
+        </ol>
+      </p>
+    </div>
+    <div class="row">
+      <h2>Specifications</h2>
+      <p>
+        The parts and numbers given here are still subject to change, but represent the current working model of the device.
+        <ol>
+          <li>STM32L475VG MCU - Variable 20~80MHz, 128KB RAM, 1MB Flash</li>
+          <li>GDEW042T2 ePaper Dispay - 2-color 400x300 4.2in. diagonal</li>
+          <li>IL0389 EPD Driver IC - 20MHz 4-wire SPI</li>
+          <li>TI bq24093 Li-Po Charger - 1A single cell w/ over-voltage protection</li>
+          <li>TI TPS62208 DC-DC Step Down Converter - 93% efficiency @ 3.7V, 10mA</li>
+          <li>Battery TBD - 1000~2000mAh single-cell Li-Po</li>
+          <li>W25N01GV QSPI Flash - 1GB (8x128MB), 50MB/s R/W</li>
+          <li>ALPS SKQYAFE010 Tactile Switches - 3.14N actuation force, 0.25mm travel</li>
+        </ol>
+      </p>
+    </div>
+    <div class="row">
+      <h2>Task List</h2>
+      <p>
+        This list will be continuously added to and reflects the current development direction. For specifics and the most up-to-date tasks, please refer to the Github issue tracker.
+        <ol>
+          <li>Port EASI from the TM4C Launchpad to the STM32 Nucleo development board</li>
+          <li>Rewrite algebraic equation parser in C++ for stack efficiency and pretty-printing</li>
+          <li>Design and fabricate new PCBs around the new MCU</li>
+          <li>Add polar and 3D graphing capabilites</li>
+          <li>Add more registers and scrolling history to RPN mode</li>
+        </ol>
+      </p>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="row" id="team">
+      <h1>MEET THE TEAM</h1>
+    </div>
+    <div class="row">
+      Coming Soon!
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="row" id="log">
+      <h1>PROJECT LOG</h1>
+    </div>
+    <div class="row">
+      <h2>Coming Soon!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, veniam magnam aspernatur labore quia excepturi eos accusamus earum commodi, distinctio dolorum repellendus sequi saepe sed eaque magni ipsum minus cum.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+
+  <div class="bottom-fade"></div>
+
+  <script src="src/script.js"></script>
+</body>
+
+<div class="bottom">
+  <div class="vflex fixed links">
+    <a href="mailto:petefan.7@utexas.edu"><i class="far fa-envelope"></i></a>
+    <a href="https://github.com/PaperFanz"><i class="fab fa-github"></i></a>
+    <a href="https://gitlab.com/PaperFanz"><i class="fab fa-gitlab"></i></a>
+    <a href="https://www.linkedin.com/in/zhiyuan-fan-896317193/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/paperfanz/"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+</html>
